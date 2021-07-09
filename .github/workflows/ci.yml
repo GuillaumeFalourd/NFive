@@ -45,7 +45,7 @@ jobs:
     - name: Move files to artifact folder
       shell: pwsh
       run: |
-        ls -lha
+        ls
         mkdir Build        
         Move-Item -Path README.md,LICENSE,*.dll,nfive.yml,nfive.lock,fxmanifest.lua,index.html,config -Destination Build
 
