@@ -19,6 +19,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - run: echo ${{ github.workspace }}
+
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
 
